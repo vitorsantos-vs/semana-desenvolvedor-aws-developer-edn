@@ -1,0 +1,16 @@
+curl -X POST <INVOKE_URL>/pedidos \
+  -H "Content-Type: application/json" \
+  -d '{
+    "pedidoId": "lab001-seu-nome",
+    "clienteId": "clienteXYZ-seu-nome",
+    "itens": [
+      {
+        "produto": "Caneta Azul",
+        "quantidade": 10
+      },
+      {
+        "produto": "Caderno UniversitÃ¡rio",
+        "quantidade": 2
+      }
+    ]
+  }'
